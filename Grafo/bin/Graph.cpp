@@ -1,11 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
+#include<iostream>
+#include<list>
+using namespace std;
  
 /**
  * @author raidentrance
  *
  */
-class Graph
+template <typename T>
+class Graph 
 {
  
     private List<NodeOri> nodes;
@@ -24,10 +26,10 @@ class Graph
         return nodes;
     }
  
-    @Override
+    // @Override
     public String toString() 
     {
         return "Graph [nodes=" + nodes + "]";
     }
  
-}
+};
