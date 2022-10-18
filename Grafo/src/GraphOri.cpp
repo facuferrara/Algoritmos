@@ -1,16 +1,18 @@
-import java.util.ArrayList;
-import java.util.List;
- 
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+#include <list>
+
+using namespace std;
 /**
  * @author raidentrance
  *
  */
-class Graph
+class GraphOri 
 {
+    list<NodeOri> nodes;
  
-    private List<NodeOri> nodes;
- 
-    public void addNode(NodeOri node) 
+    void addNode(NodeOri node) 
     {
         if (nodes == null) 
         {
@@ -19,13 +21,13 @@ class Graph
         nodes.add(node);
     }
  
-    public List<NodeOri> getNodes() 
+    list<NodeOri> getNodes() 
     {
         return nodes;
     }
  
     @Override
-    public String toString() 
+    string toString() 
     {
         return "Graph [nodes=" + nodes + "]";
     }
