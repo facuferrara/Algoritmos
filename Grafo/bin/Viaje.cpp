@@ -7,16 +7,18 @@
 #include<list>
 using namespace std;
 
-template <typename T>
+template <typename V>
 
-class Edge
+class Viaje
 {
-    private Node origin;
-    private Node destination;
-    private double distance;
+    int codigoPartida;
+    int codigoDestino;
+    int horasViaje;
+
+    //implementar funciones para determinar camino minimo en costo y duracion
  
     public:
-        Edge(Node origin, Node destination, double distance) 
+        Viaje(int codigoPartida, int codigoDestino, int horasViaje) 
     {
         this.origin = origin;
         this.destination = destination;

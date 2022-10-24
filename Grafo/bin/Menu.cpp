@@ -4,17 +4,6 @@
 #include <stdlib.h>
 using namespace std;
 
-
-class Menu{
-    
-
-
-};
-
-
-
-class Menu{};
-    
 int main(void){
 
     int opcion;

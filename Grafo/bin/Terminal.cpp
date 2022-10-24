@@ -1,38 +1,36 @@
 #include<iostream>
 #include<list>
 using namespace std;
-
-/**
- * @author raidentrance
- *
- */
 template <typename T>
+
 class Terminal 
 {
-    Node codigo;
-    Node nombre;
-    Node ciudad;
+    int codigo;
+    char* nombre;
+    char* ciudad;
     double superficie;
-    Node cantTermiNode;
-    Node destinoNacional;
-    Node destinoInter;
+    int cantTermi;
+    List<Viajes> destinoNacional; //que son, strings, o viajes? de donde salen los numeros finales 
+    List<Viajes> destinoInter; // la lista de proviene, hay que implementarla?
+
+
     List<Viajes> viajes;
  
-    public Terminal(Node codigo, Node nombre, Node ciudad, double superficie, Node cantTermiNode,  Node destinoNacional, Node destinoInter) 
+    public Terminal(int codigo, char nombre, char ciudad, double superficie, int cantTermiNode,  Node destinoNacional, Node destinoInter) 
     {
         this.codigo = codigo;
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.superficie = superficie;
         this.codigo = codigo;
-        this.cantTermiNode = cantTermiNode;
+        this.cantTermi = cantTermi;
         this.destinoNacional = destinoNacional;
         this.destinoInter = destinoInter;
     }
  
     public: 
     
-        Node getCodigo() 
+        getCodigo() 
     {
         return codigo;
     }
@@ -42,7 +40,7 @@ class Terminal
         this.codigo = codigo;
     }
  
-    public Node getDestinoNacional() 
+    public getDestinoNacional() 
     {
         return destinoNacional;
     }
@@ -52,7 +50,7 @@ class Terminal
         this.destinoNacional = destinoNacional;
     }
  
-    public Node getDestinoInter() 
+    public getDestinoInter() 
     {
         return destinoInter;
     }
@@ -62,7 +60,7 @@ class Terminal
         this.destinoInter = destinoInter;
     }
  
-    // @Override
+    // @Override toma todos los atributos y los pasa a una linea
     public String toString() 
     {
         return "\n Edge [codigo=" + codigo.getCodigo() + ", destinoNacional=" + destinoNacional.getCodigo() + ", destinoInter="
