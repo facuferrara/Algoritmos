@@ -9,51 +9,59 @@ using namespace std;
 
 template <typename T>
 
-class EdgeOri 
+class Edge
 {
-    private NodeOri origin;
-    private NodeOri destination;
+    private Node origin;
+    private Node destination;
     private double distance;
  
-    public EdgeOri(NodeOri origin, NodeOri destination, double distance) 
+    public:
+        Edge(Node origin, Node destination, double distance) 
     {
         this.origin = origin;
         this.destination = destination;
         this.distance = distance;
     }
- 
-    public NodeOri getOrigin() 
+
+    public:
+        NodeOri getOrigin() 
     {
         return origin;
     }
  
-    public void setOrigin(NodeOri origin) 
+    public: 
+        void setOrigin(Node origin) 
     {
         this.origin = origin;
     }
  
-    public NodeOri getDestination() 
+    public:
+        NodeOri getDestination() 
     {
         return destination;
     }
  
-    public void setDestination(NodeOri destination) 
+    public:
+        void setDestination(Node destination) 
     {
         this.destination = destination;
     }
  
-    public double getDistance() 
+    public:
+        double getDistance() 
     {
         return distance;
     }
  
-    public void setDistance(double distance) 
+    public:
+        void setDistance(double distance) 
     {
         this.distance = distance;
     }
  
     // @Override
-    public String toString() 
+    public: 
+        String toString() 
     {
         return "\n Edge [origin=" + origin.getCity() + ", destination=" + destination.getCity() + ", distance="
                 + distance + "]";

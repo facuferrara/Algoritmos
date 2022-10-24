@@ -9,14 +9,14 @@ using namespace std;
 template <typename T>
 class Terminal 
 {
-     Node codigo;
-     Node nombre;
-     Node ciudad;
-     double superficie;
-     Node cantTermiNode;
-     Node destinoNacional;
-     Node destinoInter;
-
+    Node codigo;
+    Node nombre;
+    Node ciudad;
+    double superficie;
+    Node cantTermiNode;
+    Node destinoNacional;
+    Node destinoInter;
+    List<Viajes> viajes;
  
     public Terminal(Node codigo, Node nombre, Node ciudad, double superficie, Node cantTermiNode,  Node destinoNacional, Node destinoInter) 
     {
@@ -30,12 +30,14 @@ class Terminal
         this.destinoInter = destinoInter;
     }
  
-    public Node getCodigo() 
+    public: 
+    
+        Node getCodigo() 
     {
         return codigo;
     }
  
-    public void setCodigo(Node codigo) 
+        void setCodigo(Node codigo) 
     {
         this.codigo = codigo;
     }
