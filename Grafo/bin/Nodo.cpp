@@ -10,53 +10,46 @@
 	template <typename T>
 	typedef int Datos;
 
-	class Nodo
-	{
-	    T terminal;
-		Datos* datos; 
-		Nodo* next;
+	class Nodo {
+	    // T terminal;
+		// Datos* datos; 
+		// Nodo* next;
 
-	    List<Terminal> terminales;
+	    // List<Terminal> terminales;
 	 
-	    // public Nodo(String terminal) 
-	    // {
-	    //     this.terminal = terminal;
-	    // }
 		public: 
-			T getDato()
-			{
-				return this->dato;
+			Nodo(int v, Nodo *sig = NULL){
+				valor = v;
+				siguiente = siguiente;
 			}
 			
-			void setDato(T dato, Nodo* next)
-			{
-				this->dato = d
-				this.next = next;
-			}
+			private:
+				int valor;
+				Nodo *siguiente;
+
+				friend class Terminal;
+	
+		//Es necesario crear una lista para las terminaless?? 
 
 		public: 
-			T obtenerDato()
+			Nodo obtenerDato()
 			{
 				return this->dato;
 			}
 			
 		public: 
-			T asignarSiguienteNodo(Nodo* next )
+			Nodo asignarSiguienteNodo(Nodo* next )
 			{
 				return this->dato;
 			}		
 
 		public: 
-			T obtenerSiguientePuntero(Nodo* next )
+			Nodo obtenerSiguientePuntero(Nodo* next )
 			{
 				return this->dato;
 			}	
 	 
-	    public void agregarNodoTerminal(Terminal terminal) 
-	    {
-	            this->dato = d   //el ultimo nodo apunta a null
-				this.next = next; // si queres apuntar a otro necesitas cabeza y siguiente?
-	    }
+	    
 	 
 	    // @Override
 	    // public String toString() 
