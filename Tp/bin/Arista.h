@@ -1,15 +1,15 @@
 #pragma once
 #include <iostream>
 
-class Vertice;
+class VerticeTerminal;
 
 class Arista
 {
 	int precio;
 	Arista* sig;
-	Vertice* dest;
+	VerticeTerminal* dest;
 
 	friend class Grafo;
 public:
-	Arista(Vertice* _dest, int precio);
+	Arista(VerticeTerminal* _dest, int precio);
 };

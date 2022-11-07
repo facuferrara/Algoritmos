@@ -38,7 +38,7 @@ int main()
 	// grafo->InsertaArista("G", "E", 9);
 	// grafo->InsertaArista("G", "F", 11);
 
-	//comentados anteriormente.
+	//comentados anteriormente..
 
 	/*grafo->InsertaVerticeTerminal("A");
 	grafo->InsertaVerticeTerminal("B");

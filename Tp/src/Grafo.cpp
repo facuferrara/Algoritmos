@@ -1,10 +1,6 @@
-// #include<iostream>
-#include<list>
+#include <iostream>
 using namespace std;
-
 #include "Grafo.h"
-template <typename G>
-
 
 Grafo::Grafo()
 {
