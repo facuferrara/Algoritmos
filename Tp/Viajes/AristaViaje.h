@@ -1,6 +1,7 @@
 #ifndef ALGORITMOS_NODOVIAJE_H
 #define ALGORITMOS_NODOVIAJE_H
 #include <iostream>
+#include <string>
 
 // Estrcutura de datos que representa un nodo de un grafo de viajes
 struct Viaje{

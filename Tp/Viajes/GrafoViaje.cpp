@@ -1,5 +1,6 @@
-#include "GrafoViaje.h"
 #include <iostream>
+#include "GrafoViaje.h"
+#include "VerticeViaje.h"
 
 GrafoViajes::GrafoViajes() {
     //Inicializamos los atributos
