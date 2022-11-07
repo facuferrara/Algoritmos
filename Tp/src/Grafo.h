@@ -8,6 +8,7 @@
 #include <unordered_set>
 
 using namespace std;
+#include "VerticeTerminal.h"
 
 class Grafo
 {

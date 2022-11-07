@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 #include "Grafo.h"
+#include <string>
+#include <windows.h>
+#include MAX;
 
 Grafo::Grafo()
 {
