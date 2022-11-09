@@ -1,6 +1,8 @@
 #include<iostream>
 #include<list>
-using namespace std;
+#include "AristaViaje.h"
+
+/*using namespace std;
 template <typename T>
 
 class Terminal 
@@ -10,22 +12,22 @@ class Terminal
     char* ciudad;
     double superficie;
     int cantTermi;
-    List<Viajes> destinoNacional; //que son, strings, o viajes? de donde salen los numeros finales 
-    List<Viajes> destinoInter; // la lista de proviene, hay que implementarla?
+    list<Viaje> destinoNacional; //que son, strings, o viajes? de donde salen los numeros finales
+    list<Viaje> destinoInter; // la lista de proviene, hay que implementarla?
 
 
-    List<Viajes> viajes;
+    list<Viaje> viajes;
  
-    public Terminal(int codigo, char nombre, char ciudad, double superficie, int cantTermiNode,  Node destinoNacional, Node destinoInter) 
+    public: Terminal(int codigo, char nombre, char ciudad, double superficie, int cantTermiNode,  Node destinoNacional, Node destinoInter)
     {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.ciudad = ciudad;
-        this.superficie = superficie;
-        this.codigo = codigo;
-        this.cantTermi = cantTermi;
-        this.destinoNacional = destinoNacional;
-        this.destinoInter = destinoInter;
+        codigo = codigo;
+        nombre = nombre;
+        ciudad = ciudad;
+        superficie = superficie;
+        codigo = codigo;
+        cantTermi = cantTermi;
+        destinoNacional = destinoNacional;
+        destinoInter = destinoInter;
     }
  
     public: 
@@ -37,10 +39,11 @@ class Terminal
  
         void setCodigo(Node codigo) 
     {
-        this.codigo = codigo;
+        codigo = codigo;
     }
  
-    public getDestinoNacional() 
+    public:
+    getDestinoNacional()
     {
         return destinoNacional;
     }
@@ -67,4 +70,4 @@ class Terminal
                 + destinoInter + "]";
     }
  
-};
+};*/

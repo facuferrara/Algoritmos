@@ -1,0 +1,3 @@
+/home/home/Unahur/Algoritmo/Algoritmos/cmake-build-debug/CMakeFiles/Algoritmos.dir
+/home/home/Unahur/Algoritmo/Algoritmos/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/home/Unahur/Algoritmo/Algoritmos/cmake-build-debug/CMakeFiles/rebuild_cache.dir

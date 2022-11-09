@@ -1,4 +1,4 @@
-#include "pch.h"
+
 #include "Destino.h"
 
 Destino::Destino(Terminal* _dest, int _precio)
