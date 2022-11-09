@@ -47,113 +47,111 @@ int main()
 		switch (opc)
 		{
 		case 1:
-		{
-			string nombre;
-			cout << "Ingrese el nombre del terminal: ";
-			cin >> nombre;
-
-			grafo->DarAltaTerminal(nombre);
-
-			break;
-		}
-		case 2:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				int precio;
-				cout << "Ingrese el nombre del terminal origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del terminal destino: ";
-				cin >> dest;
-				cout << "Ingrese el precio: ";
-				cin >> precio;
-
-				grafo->DarAltaDestino(ori, dest, precio);
-			}
-
-			break;
-		}
-		case 3:
-		{
-			int tamano = grafo->ObtenerTamano();
-			cout << "El grafo tiene " << tamano << " terminales" << endl;
-
-			break;
-		}
-		case 4:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-				grafo->MostrarListaAdyacencia();
-
-			break;
-		}
-		case 5:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
 			{
 				string nombre;
-				cout << "Ingrese el nombre del terminal a eliminar: ";
+				cout << "Ingrese el nombre del terminal: ";
 				cin >> nombre;
 
-				grafo->DarBajaTerminal(nombre);
-			}
+				grafo->DarAltaTerminal(nombre);
 
-			break;
-		}
-		case 6:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
+				break;
+			}
+			case 2:
 			{
-				string ori, dest;
-				cout << "Ingrese el nombre del terminal origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del terminal destino: ";
-				cin >> dest;
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+				{
+					string ori, dest;
+					int precio;
+					cout << "Ingrese el nombre del terminal origen: ";
+					cin >> ori;
+					cout << "Ingrese el nombre del terminal destino: ";
+					cin >> dest;
+					cout << "Ingrese el precio: ";
+					cin >> precio;
 
-				grafo->EliminarDestino(ori, dest);
+					grafo->DarAltaDestino(ori, dest, precio);
+				}
+
+				break;
 			}
-			break;
-		}
-		case 7:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
+			case 3:
 			{
-				grafo->EliminarTodo();
-			}
+				int tamano = grafo->ObtenerTamano();
+				cout << "El grafo tiene " << tamano << " terminales" << endl;
 
-			break;
-		}
-		
-		case 8:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
+				break;
+			}
+			case 4:
 			{
-				string ori;
-				cout << "Ingrese el nombre del terminal origen: ";
-				cin >> ori;
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+					grafo->MostrarListaAdyacencia();
 
-				grafo->Dijkstra(ori);
+				break;
 			}
+			case 5:
+			{
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+				{
+					string nombre;
+					cout << "Ingrese el nombre del terminal a eliminar: ";
+					cin >> nombre;
 
-			break;
-		}
-		
+					grafo->DarBajaTerminal(nombre);
+				}
 
+				break;
+			}
+			case 6:
+			{
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+				{
+					string ori, dest;
+					cout << "Ingrese el nombre del terminal origen: ";
+					cin >> ori;
+					cout << "Ingrese el nombre del terminal destino: ";
+					cin >> dest;
+
+					grafo->EliminarDestino(ori, dest);
+				}
+				break;
+			}
+			case 7:
+			{
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+				{
+					grafo->EliminarTodo();
+				}
+
+				break;
+			}
+			
+			case 8:
+			{
+				if (grafo->EstaVacio())
+					cout << "El grafo esta vacio" << endl;
+				else
+				{
+					string ori;
+					cout << "Ingrese el nombre del terminal origen: ";
+					cin >> ori;
+
+					grafo->Dijkstra(ori);
+				}
+
+				break;
+			}
 		cin.get();
 		cin.get();
+		}
 	}
-
 }
