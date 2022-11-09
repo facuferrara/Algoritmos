@@ -1,6 +1,8 @@
-
 #include <iostream>
+#include  <string>
+#include "pch.h"
 #include "Grafo.h"
+using namespace std;
 
 int main()
 {
@@ -8,85 +10,33 @@ int main()
 	int opc = 0;
 
 
-	grafo->InsertaVerticeTerminal("A");
-	// grafo->InsertaVerticeTerminal("B");
-	// grafo->InsertaVerticeTerminal("C");
-	// grafo->InsertaVerticeTerminal("D");
-	// grafo->InsertaVerticeTerminal("E");
-	// grafo->InsertaVerticeTerminal("F");
-	// grafo->InsertaVerticeTerminal("G");
-	grafo->InsertaArista("A", "B", 7);
-	// grafo->InsertaArista("A", "D", 5);
-	// grafo->InsertaArista("B", "A", 7);
-	// grafo->InsertaArista("B", "C", 8);
-	// grafo->InsertaArista("B", "D", 9);
-	// grafo->InsertaArista("B", "E", 7);
-	// grafo->InsertaArista("C", "B", 8);
-	// grafo->InsertaArista("C", "E", 5);
-	// grafo->InsertaArista("D", "A", 5);
-	// grafo->InsertaArista("D", "B", 9);
-	// grafo->InsertaArista("D", "E", 15);
-	// grafo->InsertaArista("D", "F", 6);
-	// grafo->InsertaArista("E", "B", 7);
-	// grafo->InsertaArista("E", "C", 5);
-	// grafo->InsertaArista("E", "D", 15);
-	// grafo->InsertaArista("E", "F", 8);
-	// grafo->InsertaArista("E", "G", 9);
-	// grafo->InsertaArista("F", "D", 6);
-	// grafo->InsertaArista("F", "E", 8);
-	// grafo->InsertaArista("F", "G", 11);
-	// grafo->InsertaArista("G", "E", 9);
-	// grafo->InsertaArista("G", "F", 11);
+	grafo->DarAltaTerminal("A");
+	grafo->DarAltaTerminal("B");
 
-	//comentados anteriormente..
+	grafo->DarAltaDestino("A", "B", 7);
 
-	/*grafo->InsertaVerticeTerminal("A");
-	grafo->InsertaVerticeTerminal("B");
-	grafo->InsertaVerticeTerminal("C");
-	grafo->InsertaVerticeTerminal("D");
-	grafo->InsertaVerticeTerminal("E");
-	grafo->InsertaVerticeTerminal("F");
-	grafo->InsertaVerticeTerminal("G");
-	grafo->InsertaArista("A", "A", 13);
-	grafo->InsertaArista("A", "D", 8);
-	grafo->InsertaArista("B", "B", 52);
-	grafo->InsertaArista("B", "C", 17);
-	grafo->InsertaArista("B", "D", 83);
-	grafo->InsertaArista("B", "F", 97);
-	grafo->InsertaArista("B", "G", 60);
-	grafo->InsertaArista("C", "A", 4);
-	grafo->InsertaArista("D", "B", 97);
-	grafo->InsertaArista("D", "C", 37);
-	grafo->InsertaArista("D", "D", 22);
-	grafo->InsertaArista("D", "E", 41);
-	grafo->InsertaArista("D", "G", 64);
-	grafo->InsertaArista("E", "B", 8);
-	grafo->InsertaArista("E", "E", 45);
-	grafo->InsertaArista("E", "F", 92);
-	grafo->InsertaArista("F", "A", 12);
-	grafo->InsertaArista("F", "B", 8);
-	grafo->InsertaArista("F", "E", 42);
-	grafo->InsertaArista("G", "D", 17);*/
+	/*
+	grafo->InsertaDestino("A");
+	grafo->InsertaDestino("B");
+
+	grafo->InsertaDestino("A", "A", 13);
+	grafo->InsertaDestino("A", "D", 8);
+	grafo->InsertaDestino("B", "B", 52);
+	grafo->InsertaDestino("B", "C", 17);
+	*/
 
 	while (opc != 16)
 	{
 		system("cls");
-		cout << "1. Insertar Terminal" << endl; 
-		cout << "2. Insertar destino" << endl; //ARISTA son destinos.
+		cout << "1. Dar de alta una Terminal" << endl; //era vertice
+		cout << "2. Insertar destino" << endl; //arista
 		cout << "3. Obtener tamano" << endl;
-		cout << "4. Mostrar lista de Terminales de Destinos" << endl;  //todo lo q es VerticeTerminal es TERMINAL
-		cout << "5. Eliminar terminal" << endl;
-		cout << "6. Eliminar destino" << endl; //sería eliminar destino.
-		cout << "7. Eliminar todo" << endl; //esta en dudas
-		cout << "8. Recorrido en anchura" << endl;
-		cout << "9. Recorrido en profundidad" << endl;
-		cout << "10. Primero en anchura" << endl;
-		cout << "11. Primero en profundidad" << endl;
-		cout << "12. Primero el mejor" << endl;
-		cout << "13. Dijkstra" << endl;
-		// cout << "14. Kruskal" << endl;
-		// cout << "15. Prim" << endl;
-		cout << "16. Salir" << endl;
+		cout << "4. Mostrar lista de adyacencia" << endl;
+		cout << "5. Dar de baja una terminal" << endl;
+		cout << "6. Eliminar destino" << endl;
+		cout << "7. Eliminar todo" << endl;
+		cout << "8. Dijkstra" << endl;
+		cout << "9. Salir" << endl;
 
 		cout << endl;
 		cout << "Ingrese una opcion del menu: ";
@@ -99,10 +49,10 @@ int main()
 		case 1:
 		{
 			string nombre;
-			cout << "Ingrese el nombre del VerticeTerminal: ";
+			cout << "Ingrese el nombre del terminal: ";
 			cin >> nombre;
 
-			grafo->InsertaVerticeTerminal(nombre);
+			grafo->DarAltaTerminal(nombre);
 
 			break;
 		}
@@ -114,14 +64,14 @@ int main()
 			{
 				string ori, dest;
 				int precio;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
+				cout << "Ingrese el nombre del terminal origen: ";
 				cin >> ori;
-				cout << "Ingrese el nombre del VerticeTerminal destino: ";
+				cout << "Ingrese el nombre del terminal destino: ";
 				cin >> dest;
 				cout << "Ingrese el precio: ";
 				cin >> precio;
 
-				grafo->InsertaArista(ori, dest, precio);
+				grafo->DarAltaDestino(ori, dest, precio);
 			}
 
 			break;
@@ -129,7 +79,7 @@ int main()
 		case 3:
 		{
 			int tamano = grafo->ObtenerTamano();
-			cout << "El grafo tiene " << tamano << " VerticeTerminals" << endl;
+			cout << "El grafo tiene " << tamano << " terminales" << endl;
 
 			break;
 		}
@@ -149,12 +99,12 @@ int main()
 			else
 			{
 				string nombre;
-				cout << "Ingrese el nombre del VerticeTerminal a eliminar: ";
+				cout << "Ingrese el nombre del terminal a eliminar: ";
 				cin >> nombre;
 
-				grafo->EliminarVerticeTerminal(nombre);
+				grafo->DarBajaTerminal(nombre);
 			}
-			
+
 			break;
 		}
 		case 6:
@@ -164,12 +114,12 @@ int main()
 			else
 			{
 				string ori, dest;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
+				cout << "Ingrese el nombre del terminal origen: ";
 				cin >> ori;
-				cout << "Ingrese el nombre del VerticeTerminal destino: ";
+				cout << "Ingrese el nombre del terminal destino: ";
 				cin >> dest;
 
-				grafo->EliminarArista(ori, dest);
+				grafo->EliminarDestino(ori, dest);
 			}
 			break;
 		}
@@ -184,95 +134,15 @@ int main()
 
 			break;
 		}
+		
 		case 8:
 		{
 			if (grafo->EstaVacio())
 				cout << "El grafo esta vacio" << endl;
 			else
 			{
-				string nombre;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> nombre;
-
-				grafo->RecorridoAnchura(nombre);
-			}
-
-			break;
-		}
-		case 9:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string nombre;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> nombre;
-
-				grafo->RecorridoProfundidad(nombre);
-			}
-
-			break;
-		}
-		case 10:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del VerticeTerminal destino: ";
-				cin >> dest;
-
-				grafo->PrimeroEnAnchura(ori, dest);
-			}
-
-			break;
-		}
-		case 11:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del VerticeTerminal destino: ";
-				cin >> dest;
-
-				grafo->PrimeroEnProfundidad(ori, dest);
-			}
-
-			break;
-		}
-		case 12:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del VerticeTerminal destino: ";
-				cin >> dest;
-
-				grafo->PrimeroElMejor(ori, dest);
-			}
-
-			break;
-		}
-		case 13:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
 				string ori;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
+				cout << "Ingrese el nombre del terminal origen: ";
 				cin >> ori;
 
 				grafo->Dijkstra(ori);
@@ -280,33 +150,7 @@ int main()
 
 			break;
 		}
-		case 14:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				grafo->Kruskal();
-			}
-
-			break;
-		}
-		case 15:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string nombre;
-				cout << "Ingrese el nombre del VerticeTerminal origen: ";
-				cin >> nombre;
-
-				grafo->Prim(nombre);
-			}
-
-			break;
-		}
-		}
+		
 
 		cin.get();
 		cin.get();

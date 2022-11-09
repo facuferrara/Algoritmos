@@ -2,11 +2,11 @@
 #include <fstream>
 #include <string>
 #include <vector>
-
+#include GestionDatos.h
 using namespace std;
 
-int main()
-
+// int main()
+class GestionDatos
 {
   // Creo una cadena
   char cadena[128];
@@ -24,15 +24,13 @@ int main()
     // while (!datos.eof()) 
     while (getline(datos, RET))
     {
-
-      cout << "Una línea: ";
       cout << RET << endl;
       cout << COR << endl;
     }
     // datos.getline(cadena, 128);
   
   datos.close();
-  
+
   // system("pause");
   
   // cout << cadena << endl;

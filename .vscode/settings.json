@@ -51,5 +51,6 @@
         "unordered_set": "cpp",
         "xhash": "cpp",
         "xtree": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
