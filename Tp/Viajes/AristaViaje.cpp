@@ -3,7 +3,7 @@
 
 AristaViaje::AristaViaje(Viaje v) {
 
-    //Constructor de la clase Nodo
+    //Constructor de la clase NodoLista
     viaje = v;
     siguiente = nullptr;
 }

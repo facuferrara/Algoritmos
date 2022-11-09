@@ -35,4 +35,4 @@ add_executable(Algoritmos
         Tp/Viajes/GrafoViaje.cpp
         Tp/Viajes/GrafoViaje.h
         Tp/Viajes/VerticeViaje.cpp
-        Tp/Viajes/VerticeViaje.h Tp/src/propiedadesTerminal.h)
+        Tp/Viajes/VerticeViaje.h Tp/src/propiedadesTerminal.h Tp/Lista/NodoLista.cpp Tp/Lista/NodoLista.h Tp/Lista/Lista.cpp Tp/Lista/Lista.h)

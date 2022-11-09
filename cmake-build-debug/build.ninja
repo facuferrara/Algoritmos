@@ -154,6 +154,20 @@ build CMakeFiles/Algoritmos.dir/Tp/Viajes/VerticeViaje.cpp.o: CXX_COMPILER__Algo
   OBJECT_DIR = CMakeFiles/Algoritmos.dir
   OBJECT_FILE_DIR = CMakeFiles/Algoritmos.dir/Tp/Viajes
 
+build CMakeFiles/Algoritmos.dir/Tp/Lista/NodoLista.cpp.o: CXX_COMPILER__Algoritmos_Debug /home/home/Unahur/Algoritmo/Algoritmos/Tp/Lista/NodoLista.cpp || cmake_object_order_depends_target_Algoritmos
+  DEP_FILE = CMakeFiles/Algoritmos.dir/Tp/Lista/NodoLista.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/bin -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/src -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/Viajes
+  OBJECT_DIR = CMakeFiles/Algoritmos.dir
+  OBJECT_FILE_DIR = CMakeFiles/Algoritmos.dir/Tp/Lista
+
+build CMakeFiles/Algoritmos.dir/Tp/Lista/Lista.cpp.o: CXX_COMPILER__Algoritmos_Debug /home/home/Unahur/Algoritmo/Algoritmos/Tp/Lista/Lista.cpp || cmake_object_order_depends_target_Algoritmos
+  DEP_FILE = CMakeFiles/Algoritmos.dir/Tp/Lista/Lista.cpp.o.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/bin -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/src -I/home/home/Unahur/Algoritmo/Algoritmos/Tp/Viajes
+  OBJECT_DIR = CMakeFiles/Algoritmos.dir
+  OBJECT_FILE_DIR = CMakeFiles/Algoritmos.dir/Tp/Lista
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Algoritmos
@@ -162,7 +176,7 @@ build CMakeFiles/Algoritmos.dir/Tp/Viajes/VerticeViaje.cpp.o: CXX_COMPILER__Algo
 #############################################
 # Link the executable Algoritmos
 
-build Algoritmos: CXX_EXECUTABLE_LINKER__Algoritmos_Debug CMakeFiles/Algoritmos.dir/Tp/bin/Destino.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/GestionDatos.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/Grafo.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/GrafoDinamico.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/propiedadesTerminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/Terminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Destino.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/GestionDatos.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Grafo.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/GrafoDinamico.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/propiedadesTerminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Terminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/AristaViaje.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/GrafoViaje.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/VerticeViaje.cpp.o
+build Algoritmos: CXX_EXECUTABLE_LINKER__Algoritmos_Debug CMakeFiles/Algoritmos.dir/Tp/bin/Destino.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/GestionDatos.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/Grafo.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/GrafoDinamico.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/propiedadesTerminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/bin/Terminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Destino.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/GestionDatos.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Grafo.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/GrafoDinamico.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/propiedadesTerminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/src/Terminal.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/AristaViaje.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/GrafoViaje.cpp.o CMakeFiles/Algoritmos.dir/Tp/Viajes/VerticeViaje.cpp.o CMakeFiles/Algoritmos.dir/Tp/Lista/NodoLista.cpp.o CMakeFiles/Algoritmos.dir/Tp/Lista/Lista.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Algoritmos.dir
   POST_BUILD = :
