@@ -1,6 +1,7 @@
 #pragma once
 #include "Terminal.h"
 #include "Destino.h"
+#include <string>
 using namespace std;
 
 class Grafo
@@ -24,6 +25,6 @@ public:
 	void EliminarDestinos(Terminal* terminal); // Elimina las aristas del vertice especificado
 	void EliminarAristasDestino(string dest); // Elimina las aristas que tienen como destino el vertice especificado
 
-	void Dijkstra(string origen); // Despliega la ruta más corta entre el origen y los demás vertices
+	/*void Dijkstra(string origen); // Despliega la ruta más corta entre el origen y los demás vertices*/
 };
 

@@ -28,5 +28,5 @@ public:
 
 	void MostrarRutaEncontrada(stack<pair<Terminal*, Terminal*>> pilaPar, Terminal* vdest); // Despliega la ruta encontrada
 	*/
-	void Dijkstra(string origen); // Despliega la ruta más corta entre el origen y los dem
+	//void Dijkstra(string origen); // Despliega la ruta más corta entre el origen y los dem
 };
