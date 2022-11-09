@@ -1,0 +1,15 @@
+# ninja log v5
+1	271	1667996408949339055	CMakeFiles/Algoritmos.dir/Tp/bin/Terminal.cpp.o	20a586b0d62611ec
+3	313	1667996726745344180	CMakeFiles/Algoritmos.dir/Tp/src/GrafoDinamico.cpp.o	9c1f29451e979b5c
+1	260	1667996812001345555	CMakeFiles/Algoritmos.dir/Tp/src/Terminal.cpp.o	8a205da81b58b3c6
+0	253	1667996408929339055	CMakeFiles/Algoritmos.dir/Tp/bin/Destino.cpp.o	3b1b1bc1cc0a443a
+1	310	1667996408985339056	CMakeFiles/Algoritmos.dir/Tp/bin/GrafoDinamico.cpp.o	69e20f243dc2cdca
+0	334	1667996409009339056	CMakeFiles/Algoritmos.dir/Tp/bin/Grafo.cpp.o	b561fdbdb09f5dfa
+1	297	1667996812037345555	CMakeFiles/Algoritmos.dir/Tp/src/Grafo.cpp.o	1b2c3adb9089226d
+0	198	1667997102193350235	CMakeFiles/Algoritmos.dir/Tp/bin/propiedadesTerminal.cpp.o	53c03a990920eb11
+1	205	1667997102201350235	CMakeFiles/Algoritmos.dir/Tp/src/propiedadesTerminal.cpp.o	990b5932cb92f844
+198	442	1667997102437350239	CMakeFiles/Algoritmos.dir/Tp/Viajes/VerticeViaje.cpp.o	e5494f37f1d3ad27
+1	275	1667996726705344179	CMakeFiles/Algoritmos.dir/Tp/src/Destino.cpp.o	b9f1e987085e8851
+0	16	1668026408160151512	build.ninja	3618251b8cf849ba
+1	232	1668026408392151516	CMakeFiles/Algoritmos.dir/Tp/Lista/Lista.cpp.o	72f0cf1d4130b0c7
+1	263	1668026408424151517	CMakeFiles/Algoritmos.dir/Tp/Lista/NodoLista.cpp.o	72243a5269cd6b50

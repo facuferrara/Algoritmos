@@ -2,11 +2,12 @@
 #define ALGORITMOS_NODOVIAJE_H
 #include <iostream>
 #include <string>
+#include "VerticeViaje.h"
 
 // Estrcutura de datos que representa un nodo de un grafo de viajes
 struct Viaje{
-    string  codPartida;
-    string  codDestino;
+    std::string  codPartida;
+    std::string  codDestino;
     int     costoViaje;
     int     tiempoViaje;
 };

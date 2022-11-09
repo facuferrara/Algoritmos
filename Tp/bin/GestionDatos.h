@@ -1,5 +1,2 @@
 #include <iostream>
 
-class GestionDatos{
-
-}
