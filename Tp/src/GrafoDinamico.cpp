@@ -1,6 +1,6 @@
 #include <iostream>
 #include  <string>
-#include "pch.h"
+// #include "pch.h"
 #include "Grafo.h"
 using namespace std;
 
